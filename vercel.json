@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/index.js": {
-      "runtime": "@vercel/node@20.x" // Try this first for Node.js 20
+      "runtime": "@vercel/node@20.x"
     }
   },
   "routes": [
