@@ -1,19 +1,17 @@
 {
   "functions": {
     "api/index.js": {
-      "runtime": "nodejs18.x" // Or "nodejs20.x" if you prefer newer Node.js
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
     {
-      "src": "/api/(.*)", // This regex matches any path starting with /api/
-      "dest": "/api"      // This routes matched paths to your api/index.js function
+      "src": "/api/(.*)",
+      "dest": "/api"
     }
   ],
   "build": {
     "env": {
-      // You can define default/fallback env vars here, but sensitive ones
-      // like API keys should always be set in the Vercel dashboard.
       "GEMINI_MODEL_ID": "gemini-2.0-flash",
       "GENERATE_CONTENT_API": "streamGenerateContent"
     }
